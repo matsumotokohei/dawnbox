@@ -4,6 +4,10 @@ A custom, budget-friendly 24-button leverless arcade controller featuring an alu
 
 ## 📸 Gallery / Previews
 
+### Keyboard Layout
+
+![Keyboard Layout](img/arcade-controller.jpg)
+
 ### Main PCB
 
 | Top View (Front) | Bottom View (Back) |

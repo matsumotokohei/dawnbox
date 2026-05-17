@@ -74,18 +74,18 @@ The following external libraries and specific footprints were used in KiCad for 
 
 ## 🧱 Bill of Materials (BOM)
 
-| Component           | Description                                      | Qty   |
-| :---                | :---                                             | :---  |
-| **Main PCB**        | Custom designed board manufactured by **JLCPCB** | 1     |
-| **Top Plate**       | Custom Aluminum plate with Alex artwork (JLCPCB) | 1     |
-| **MCU**             | Raspberry Pi Pico (RP2040)                       | 1     |
-| **Sockets**         | Kailh MX Hot-swap Sockets                        | 24    |
-| **Keycaps**         | MX-compatible keycaps                            | 24    |
-| **Switches**        | Kailh MX-compatible Mechanical Switches          | 24    |
-| **M3 Standoffs**    | Female-Female Spacers for enclosure stability    | 8     |
-| **M3 Screws**       | Screws to secure the PCB and Aluminum Top Plate  | 16    |
-| **IC**              | 74HC4050 (Level Shifter for LEDs)                | 1     |
-| **LEDs**            | SK6812MINI-E (Addressable RGB)                   | 24    |
-| **Bulk Cap**        | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor   | 1     |
-| **Decoupling Caps** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors | 25    |
-| **Display**         | 0.96" I2C OLED Module (128x64 SSD1306 / 4-pin)   | 1     |
+| Component           | Description                                      | Qty   | Note |
+| :---                | :---                                             | :---  | :--- |
+| **Main PCB**        | Custom designed board manufactured by **JLCPCB** | 1     | -    |
+| **Top Plate**       | Custom Aluminum plate with Alex artwork (JLCPCB) | 1     | -    |
+| **MCU**             | Raspberry Pi Pico (RP2040)                       | 1     | -    |
+| **Sockets**         | Kailh MX Hot-swap Sockets                        | 24    | -    |
+| **Keycaps**         | MX-compatible keycaps                            | 24    | -    |
+| **Switches**        | Kailh MX-compatible Mechanical Switches          | 24    | -    |
+| **M3 Standoffs**    | Female-Female Spacers for enclosure stability    | 8     | -    |
+| **M3 Screws**       | Screws to secure the PCB and Aluminum Top Plate  | 16    | -    |
+| **IC**              | 74HC4050 (Level Shifter for LEDs)                | 1     | Optional |
+| **LEDs**            | SK6812MINI-E (Addressable RGB)                   | 24    | Optional |
+| **Bulk Cap**        | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor    | 1     | Optional |
+| **Decoupling Caps** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors  | 25    | Optional |
+| **Display**         | 0.96" I2C OLED Module (128x64 SSD1306 / 4-pin)   | 1     | Optional |

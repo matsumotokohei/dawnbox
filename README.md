@@ -87,5 +87,9 @@ The following external libraries and specific footprints were used in KiCad for 
 | **IC**              | 74HC4050 (Level Shifter for LEDs)                | 1     | Optional |
 | **LEDs**            | SK6812MINI-E (Addressable RGB)                   | 24    | Optional |
 | **Bulk Cap**        | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor    | 1     | Optional |
-| **Decoupling Caps** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors  | 25    | Optional |
+| **Decoupling Caps for LEDs** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors | 24   | Optional |
+| **Decoupling Caps for 74HC** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors | 1    | Optional |
+| **Decoupling Caps for MCU**  | 47μF SMD 1206 (3216 Metric) Ceramic Capacitors  | 1    | Optional |
 | **Display**         | 0.96" I2C OLED Module (128x64 SSD1306 / 4-pin)   | 1     | Optional |
+| **Header Pins**     | 1x4 Male Pin Header (2.54mm pitch) for OLED      | 1     | Optional |
+

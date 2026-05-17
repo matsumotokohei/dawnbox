@@ -82,8 +82,8 @@ The following external libraries and specific footprints were used in KiCad for 
 | **Sockets**         | Kailh MX Hot-swap Sockets                        | 24    |
 | **Keycaps**         | MX-compatible keycaps                            | 24    |
 | **Switches**        | Kailh MX-compatible Mechanical Switches          | 24    |
-| **M3 Standoffs      | Female-Female Spacers for enclosure stability    | 8     |
-| **M3 Screws         | Screws to secure the PCB and Aluminum Top Plate  | 16    |
+| **M3 Standoffs**    | Female-Female Spacers for enclosure stability    | 8     |
+| **M3 Screws**       | Screws to secure the PCB and Aluminum Top Plate  | 16    |
 | **IC**              | 74HC4050 (Level Shifter for LEDs)                | 1     |
 | **LEDs**            | SK6812MINI-E (Addressable RGB)                   | 24    |
 | **Bulk Cap**        | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor   | 1     |

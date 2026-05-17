@@ -27,14 +27,13 @@ This project focuses on building a high-performance, low-latency, and cost-effec
 *   **Firmware**: Powered by [GP2040-CE](https://gp2040-ce.info), offering ultra-low latency and multi-platform compatibility.
 *   **Controller**: Uses a **Raspberry Pi Pico** (RP2040) as the main MCU.
 *   **No Diodes (Direct Connection)**: All 24 switches are wired directly to individual GPIO pins on the Pico, maximizing responsiveness and avoiding ghosting without a matrix.
-*   **0.96" I2C OLED Display**: Features an onboard **128x64 OLED screen (SSD1306)** connected via a dedicated 4-pin header interface to display real-time input history, active profiles, SOCD modes, and connection status. (No external pull-up resistors required).
 *   **Aluminum Top Plate**: Utilizes an aluminum plate manufactured by **JLCPCB** as the top enclosure for a premium, rigid, and durable finish.
 *   **Exposed PCB Case Design**: Minimalist aesthetic with exposed sides and bottom, utilizing heavy-duty **M3 spacers/standoffs** directly attached via M3 mounting holes routed into the main board and top plate.
 *   **Hot-Swappable Switches**: Uses **Kailh MX-compatible switches** with **Kailh hot-swap sockets**, allowing easy switch replacement without soldering.
 *   **Keycaps**: Designed specifically for standard **MX-compatible keycaps**.
-*   **RGB LED Power & Stability**: LEDs are powered directly via the Pico's **VSYS pin** (5V). The power rail is stabilized with a **47μF SMD 1206 (3216)** bulk capacitor alongside individual **0.1μF SMD 1206 (3216)** decoupling capacitors for each LED to handle voltage fluctuations.
-*   **Level Shifter Circuit**: Integrates a **74HC4050** hex buffer to safely step up the Pico's 3.3V data signal to 5V for reliable LED operation.
-*   **Custom PCB & Plate**: Fully designed and routed in **KiCad**, then manufactured by **JLCPCB**.
+*   **0.96" I2C OLED Display**: Features an onboard **128x64 OLED screen (SSD1306)** connected via a dedicated 4-pin header interface to display real-time input history, active profiles, SOCD modes, and connection status. (No external pull-up resistors required).  (Optional)
+*   **RGB LED Power & Stability**: LEDs are powered directly via the Pico's **VSYS pin** (5V). The power rail is stabilized with a **47μF SMD 1206 (3216)** bulk capacitor alongside individual **0.1μF SMD 1206 (3216)** decoupling capacitors for each LED to handle voltage fluctuations.  (Optional)
+*   **Level Shifter Circuit**: Integrates a **74HC4050** hex buffer to safely step up the Pico's 3.3V data signal to 5V for reliable LED operation. (Optional)
 
 ## 📦 Design Libraries & Footprints
 
@@ -75,25 +74,18 @@ The following external libraries and specific footprints were used in KiCad for 
 
 ## 🧱 Bill of Materials (BOM)
 
-
-
-
-
-| Component | Description | Qty | Status |
-| :--- | :--- | :--- | :--- |
-| **Main PCB** | Custom designed board manufactured by **JLCPCB** | 1 | Planned |
-| **Top Plate** | Custom Aluminum plate with Alex artwork (JLCPCB) | 1 | Planned |
-| **MCU** | Raspberry Pi Pico (RP2040) | 1 | Planned |
-| **IC** | 74HC4050 (Level Shifter for LEDs) | 1 | Planned |
-| **Display** | 0.96" I2C OLED Module (128x64 SSD1306 / 4-pin) | 1 | Planned |
-| **Header Pins** | 1x4 Male Pin Header (2.54mm pitch) for OLED | 1 | Planned |
-| **Sockets** | Kailh MX Hot-swap Sockets | 24 | Planned |
-| **Switches** | Kailh MX-compatible Mechanical Switches | 24 | Planned |
-| **LEDs** | SK6812MINI-E (Addressable RGB) | 24 | Planned |
-| **Bulk Cap** | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor | 1 | Planned |
-| **Decoupling Caps** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors | 24 | Planned |
-| **Keycaps** | MX-compatible keycaps | 24 | Planned |
-| **Hardware** | **M3 Standoffs, M3 screws**, and rubber feet for enclosure assembly | 1 set | Planned |
-
----
-*Feel free to contribute, open an issue, or fork this repository if you want to build your own!*
+| Component           | Description                                      | Qty   |
+| :---                | :---                                             | :---  |
+| **Main PCB**        | Custom designed board manufactured by **JLCPCB** | 1     |
+| **Top Plate**       | Custom Aluminum plate with Alex artwork (JLCPCB) | 1     |
+| **MCU**             | Raspberry Pi Pico (RP2040)                       | 1     |
+| **Sockets**         | Kailh MX Hot-swap Sockets                        | 24    |
+| **Keycaps**         | MX-compatible keycaps                            | 24    |
+| **Switches**        | Kailh MX-compatible Mechanical Switches          | 24    |
+| **M3 Standoffs      | Female-Female Spacers for enclosure stability    | 8     |
+| **M3 Screws         | Screws to secure the PCB and Aluminum Top Plate  | 16    |
+| **IC**              | 74HC4050 (Level Shifter for LEDs)                | 1     |
+| **LEDs**            | SK6812MINI-E (Addressable RGB)                   | 24    |
+| **Bulk Cap**        | 47μF SMD 1206 (3216 Metric) Ceramic Capacitor   | 1     |
+| **Decoupling Caps** | 0.1μF SMD 1206 (3216 Metric) Ceramic Capacitors | 25    |
+| **Display**         | 0.96" I2C OLED Module (128x64 SSD1306 / 4-pin)   | 1     |
